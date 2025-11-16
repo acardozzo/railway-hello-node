@@ -4,10 +4,11 @@ const PORT = process.env.PORT || 8080;
 
 app.get('/', (req, res) => {
   res.json({
-    message: 'Hello from Railway-like Platform!',
-    version: '1.0.0',
+    message: 'Hello from Railway-like Platform! 🚀',
+    version: '2.0.0',
     timestamp: new Date().toISOString(),
-    hostname: require('os').hostname()
+    hostname: require('os').hostname(),
+    status: 'Rolling update test successful!'
   });
 });
 
